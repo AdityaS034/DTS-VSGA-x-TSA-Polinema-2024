@@ -1,0 +1,59 @@
+1.  Apa yang dimaksud type juggling di PHP?
+    Jawab :   Juggling PHP adalah proses otomatis di mana PHP secara dinamis mengonversi 
+              satu tipe data ke tipe data lain sesuai dengan kebutuhan operasi atau konteks 
+              di mana nilai tersebut digunakan. Ini dilakukan tanpa memerlukan konversi 
+              eksplisit dari programmer. Karena PHP adalah bahasa yang lemah tipenya 
+              (loosely typed language).
+
+2.  Apakah perbedaan antara operator == dengan === dalam PHP?
+    Jawab : Operator ==:
+            - Membandingkan hanya nilai.
+            - Melakukan type juggling jika diperlukan.
+            - Contoh: "10" == 10 adalah true.
+
+            Operator ===:
+            - Membandingkan nilai dan tipe data.
+            - Tidak melakukan type juggling.
+            - Contoh: "10" === 10 adalah false (karena tipe data berbeda).
+
+3.  Apa sajakah jenis operator yang menghasilkan nilai boolean?
+    Jawab : Operator Perbandingan:
+            - == : Equal
+            - === : Identical
+            - != : Not equal
+            - <> : Not equal (alternative)
+            - !== : Not identical
+            - < : Less than
+            - > : Greater than
+            - <= : Less than or equal to
+            - >= : Greater than or equal to
+            - <=> : Spaceship operator (returns -1, 0, or 1)
+
+            Operator Logika:
+            - && : Logical AND
+            - || : Logical OR
+            - ! : Logical NOT
+            - and : Logical AND (lower precedence)
+            - or : Logical OR (lower precedence)
+            - xor : Logical XOR
+
+            Operator Penugasan dengan Perbandingan:
+            - += : Addition assignment
+            - -= : Subtraction assignment
+            - *= : Multiplication assignment
+            - /= : Division assignment
+            - %= : Modulus assignment
+
+4.  Apakah perbedaan antara tipe data primitif dengan tipe data objek?
+    Jawab : Data Primitif :
+            - Nilai Disimpan langsung di memori.
+            - Ukuran tetap dan ditentukan oleh tipe	
+            - Tidak memiliki metode atau fungsi
+            - Lebih sederhana dan efisien
+
+            Data Objek :
+            - Referensi ke lokasi memori objek
+            - Ukuran dinamis tergantung pada struktur objek
+            - Memiliki metode (fungsi) dan properti (data)
+            - Lebih kompleks dan fleksibel
+    
