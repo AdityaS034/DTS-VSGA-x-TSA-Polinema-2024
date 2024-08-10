@@ -15,8 +15,6 @@ $options = [
 try {
     $pdo = new PDO($dsn, $user, $pass, $options);
     echo "Koneksi berhasil!<br>";
-
-    // Membuat tabel products
     $sql = "CREATE TABLE IF NOT EXISTS products (
         id INT AUTO_INCREMENT PRIMARY KEY,
         name VARCHAR(100) NOT NULL,
